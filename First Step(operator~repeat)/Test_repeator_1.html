@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      //별 피라미드를 쌓을거야 맨 아래에 9개!
+      var output ='';
+      for (var i = 0; i < 10; i++) {
+        for (var j = 0; j < i; j++) {
+          output +='*';
+        }
+        output+="\n"
+      }
+      alert(output);
+
+      //별 피라미드 응용!(고난이도)
+      var output2='';
+      for (var i = 0; i < 15; i++) {
+        //줄바꿈 한번에 output2에 스페이스바를 15번,14번,13번,,,0번
+        for (var j =15; j > i; j--) {
+            output2+=' ';
+        }for (var k = 0; k < i*2-1; k++) {
+          //여기에서 i는 이미 후위가산이 이행되어 있는 상태, 별의 개수는 층(i)당 2i-1개
+          output2+='*';
+        }output2+='\n';
+      }alert(output2);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

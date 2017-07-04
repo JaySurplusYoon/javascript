@@ -10,6 +10,14 @@
       alert(array1.length);
     //push명령어를 통해 배열에 값을 삽입한다
       array1.push("추가삽입문자열");
+    //for in문(반복변수i에 '인덱스'가 들어간다)
+      for (var i in array1) {
+        alert("for in 문 : "+array1[i]);
+      }
+    //for of문(반복변수i에 '요소'가 들어간다)
+      for(var i of array1){
+        alert("for of 문 : "+i)
+      }
     </script>
   </head>
   <body>
