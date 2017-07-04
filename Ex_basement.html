@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      test1
+    </title>
+    <!--script type="text/javascript" html5에서는 스크립트 태그에 type안적는게 원칙이다-->
+    <script>
+        alert('hello World.!');
+        //하나의 따옴표만 쓰면서 따옴표문자출력 원하면 앞에 \(이스케이프문자)를 사용하여 문자화 가능
+        alert('\'hello world\'');
+        alert("'hello world'");
+        alert('동해물과'+' 백두산이    '+'마르고'+'닳도록');
+
+        //논리부정, 논리곱, 논리합
+        alert(!true);
+        alert(true&&true);
+        alert(false||false);
+
+        //변수선언
+        var pi = 3.141592, radius = 10;
+        alert(pi*radius*2);
+
+        //자료형 검사하기 (typeof 연산자)
+        alert(typeof(pi));
+        alert(typeof(klajd)); //undefined(선언도, 초기화도 하지 않았으므로), undefined자료형은 false와 같다
+        alert(typeof(true)); //boolean
+        alert(typeof(typeof(30))); //strint(단항연산자 typeof)
+
+        //입력하기
+        var input1 = prompt('당신의 이름은?',"지우고 입력하세요")
+        var input2 = confirm('잘생겼음을 인정합니까?')
+        alert("당신의 이름은 "+input1+" 입니다");
+          if(input2==true){
+            input2 ='뻔뻔하군요'
+          }else input2 ='겸손하군요'
+        alert("당신은 참"+input2);
+
+        //형변환 및 복소수
+        var forced_num = Number('가나다');//Nan출력
+        var forced_char = String(123);
+        var complex_num = Math.sqrt(-3);//Nan출력
+        alert(forced_num);
+        alert(forced_char);
+        alert(complex_num);
+
+        //템플릿 문자열
+        alert('표현식 3+5는 '+(3+5)+'입니다'); //기존 표현식 결합(복잡)
+        alert(`표현식 3+5는 ${3+5}입니다`) //템플릿문자열
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
