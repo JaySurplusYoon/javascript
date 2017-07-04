@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
-     //배열에는 다양한 데이터 타입이 들어갈 수 있다(심지어 배열까지!)
-      var array1 = [1,"가나다",true,{},function(){},[103,102]];
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    //배열에는 다양한 데이터 타입이 들어갈 수 있다(심지어 배열까지!)
+    var array1 = [1, "가나다", true, {}, function() {},
+      [103, 102]
+    ];
     //배열객체.length를 통해  배열의 길이 구할 수 있다
-      alert(array1.length);
+    alert(array1.length);
     //push명령어를 통해 배열에 값을 삽입한다
-      array1.push("추가삽입문자열");
+    array1.push("추가삽입문자열");
     //for in문(반복변수i에 '인덱스'가 들어간다)
-      for (var i in array1) {
-        alert("for in 문 : "+array1[i]);
-      }
+    for (var i in array1) {
+      alert("for in 문 : " + array1[i]);
+    }
     //for of문(반복변수i에 '요소'가 들어간다)
-      for(var i of array1){
-        alert("for of 문 : "+i)
-      }
-    </script>
-  </head>
-  <body>
-  </body>
+    for (var i of array1) {
+      alert("for of 문 : " + i)
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
 </html>

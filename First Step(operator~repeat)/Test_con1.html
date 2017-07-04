@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
     //국어,수학, 영어점수를 입력받아 평균에 따라 수우미양가로 분류하겠다
     //prompt를 통해 입력받은 값은 문자열로 인식되어 별도로 숫자로 형변환 필요하다. Number()메소드로 감싸주자
-      const koreanInput =Number(prompt("국어점수입력하시오",""));
-      const mathInput =Number(prompt("수학점수입력하시오",""));
-      const englishInput =Number(prompt("영어점수입력하시오",""));
-      let level;
-      const avgScore = (koreanInput+mathInput+englishInput)/3;
-        if (avgScore>=90) {
-          level = "수";
-        }else if(avgScore>=80){
-          level ="우";
-        }else if(avgScore>=70){
-          level = "미";
-        }else if(avgScore>=60){
-          level = "양";
-        }else level ="가";
+    const koreanInput = Number(prompt("국어점수입력하시오", ""));
+    const mathInput = Number(prompt("수학점수입력하시오", ""));
+    const englishInput = Number(prompt("영어점수입력하시오", ""));
+    let level;
+    const avgScore = (koreanInput + mathInput + englishInput) / 3;
+    if (avgScore >= 90) {
+      level = "수";
+    } else if (avgScore >= 80) {
+      level = "우";
+    } else if (avgScore >= 70) {
+      level = "미";
+    } else if (avgScore >= 60) {
+      level = "양";
+    } else level = "가";
 
-      alert("평균점수 : "+avgScore+"점"+"\n"+"등급 : "+level);
-      (avgScore<70)? alert("휴먼이 아닙니다") : alert("휴먼입니다");
-    </script>
-  </head>
-  <body>
+    alert("평균점수 : " + avgScore + "점" + "\n" + "등급 : " + level);
+    (avgScore < 70) ? alert("휴먼이 아닙니다"): alert("휴먼입니다");
+  </script>
+</head>
 
-  </body>
+<body>
+
+</body>
+
 </html>

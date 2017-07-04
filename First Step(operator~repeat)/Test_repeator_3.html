@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    //임의의 값의 배열에서 최대값과 최소값을 구하라
+    var array = [950, 373, 153, 123, 5, 320, 132, 100000, -1010],
+      max = array[0],
+      min = array[0];
+    for (var j = 1; j <= array.length; j++) {
+      if (max < array[j]) {
+        max = array[j]
+      }
+    }
+    for (var i = 1; i <= array.length; i++) {
+      if (min > array[i]) {
+        min = array[i]
+      }
+    }
+    alert("최대값:" + max + "최소값:" + min);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

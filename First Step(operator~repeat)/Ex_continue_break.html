@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
-      //confirm & break를 활용한 무한루프 탈출
-      for (var i = 0; true ; i++) {
-        alert(i+"번째 반복입니다")
-        if(confirm("반복 그만할까요?")){
-          break; //confirm문에서 true(반복그만해요)가 나오면 break찍고 for문 탈출!
-        }
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    //confirm & break를 활용한 무한루프 탈출
+    for (var i = 0; true; i++) {
+      alert(i + "번째 반복입니다")
+      if (confirm("반복 그만할까요?")) {
+        break; //confirm문에서 true(반복그만해요)가 나오면 break찍고 for문 탈출!
       }
+    }
 
-      //continue활용하여 0~10까지 中 2의배수 시그마 구하기
-      var add = 0;
-      for (var j = 0; j < 11; j++) {
-        if(j%2==1){
-          continue;
-        }add += j;
-      }alert(add);
-    </script>
-  </head>
-  <body>
+    //continue활용하여 0~10까지 中 2의배수 시그마 구하기
+    var add = 0;
+    for (var j = 0; j < 11; j++) {
+      if (j % 2 == 1) {
+        continue;
+      }
+      add += j;
+    }
+    alert(add);
+  </script>
+</head>
 
-  </body>
+<body>
+
+</body>
+
 </html>

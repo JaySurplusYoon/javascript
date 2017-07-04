@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    var time = new Date().getHours();
+
+    while (true) {
+      var talk = prompt("안녕!나랑 대화할래?", '할말을 입력하세요');
+      var talk_check = talk.indexOf("잘 있어")
+
+      if (talk_check != -1) {
+        alert('잘가~');
+        break;
+      } else {
+        if (time >= 0 && time < 5) alert("쿨쿨~")
+        else if (time >= 5 && time < 9) alert("오늘도 힘찬하루~!")
+        else alert("헥헥 힘들다 헥헥~")
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
