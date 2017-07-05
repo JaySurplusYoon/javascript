@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+        //가변인자 함수를 알아보자
+        function sum() {
+            //arguments는 가변적인 매개변수의 배열을 나타내는 변수이다
+            alert(typeof (arguments) + ' : ' + arguments.length)
+            var output = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                output += arguments[i];
+            } alert(output);
+        }
+        sum(3,1,2,43,"바보");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,9 +6,12 @@
   <title></title>
   <script>
     //배열에는 다양한 데이터 타입이 들어갈 수 있다(심지어 배열까지!)
-    var array1 = [1, "가나다", true, {}, function() {},
-      [103, 102]
-    ];
+      var array1 = [1, "가나다", true, {}, function () { }, [103, 102]];
+      var array2 = Array();
+      var array3 = Array(30);
+      var array4 = Array(2, 3, '바보');
+      alert(array4);
+
     //배열객체.length를 통해  배열의 길이 구할 수 있다
     alert(array1.length);
     //push명령어를 통해 배열에 값을 삽입한다

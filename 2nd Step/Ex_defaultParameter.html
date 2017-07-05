@@ -1,0 +1,28 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        //기본 매개변수란 특정 함수의 parameter에서 요구하는 값을 호출시에 모두 넣어주지 못했을때,
+        //undefined로 정의되는 빈 변수를 기본으로 채워주는 작업이다
+        //아래 3가지 방법을 통해 살펴보자
+
+        function test1(a, b, c) {
+            b = b || 30;
+            c = c || 40;
+            alert(" a값 : " + a + " b값 : " + b + " c값 : "+c);
+        } test1(1, 2);
+
+        function test2(a, b, c) {
+            if (!b) b = 100;
+            if (!c) c = 200;
+            alert(" a값 : " + a + " b값 : " + b + " c값 : " + c);
+        } test2(1, 2);
+
+        function test3(a, b = 1000, c = 2000) {
+            alert(" a값 : " + a + " b값 : " + b + " c값 : " + c);
+        } test3(1, 2);
+    </script>
+</head>
+<body>
+</body>
+</html>
